@@ -1,0 +1,4238 @@
+/*
+epButtonRed  button classs
+*/
+
+
+
+.inputField input.input-field-enabled, .inputField input.input-field-disabled,
+	.inputField .input-field-enabled>input, .inputField .input-field-disabled>input
+	{
+	border-radius: 0px !important;
+}
+
+.ice-sub-mon>.ice-sub-mon-mid.active>.ice-sub-mon-txt {
+	color: black;
+}
+
+.searchForm {
+	display: table;
+	padding-left: 28px;
+	margin: 0px;
+	background-color: white;
+}
+
+.searchForm>.inputField {
+	float: left;
+	margin-right: 28px;
+	margin-top: 15px;
+}
+
+.searchForm>.inputField input.input-field-enabled, .inputField input.input-field-disabled,
+	.inputField .input-field-enabled>input, .inputField .input-field-disabled>input
+	{
+	height: 26px;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0px;
+	margin: 0px;
+	text-indent: 10px;
+	border: 1px solid rgb(205, 205, 205);
+	color: rgb(87, 87, 87);
+}
+
+.searchForm>*>select.input-field-enabled, .inputField input.input-field-enabled,
+	.inputField .input-field-enabled>input {
+	background-color: rgb(250, 250, 250);
+}
+
+.searchForm>*>select.input-field-disabled, .inputField input.input-field-disabled,
+	.inputField .input-field-disabled>input {
+	background-color: rgb(200, 200, 200);
+}
+
+/*ace:checkboxButton*/
+.searchForm>.inputField .yui-checkboxbutton-button {
+	height: 26px;
+	width: 32px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	background-color: rgb(250, 250, 250);
+}
+
+/*ace:linkButton*/
+.searchForm>.inputField .yui-button a {
+	margin-top: 20px;
+}
+
+/*ace:checkboxButton icon
+.searchForm > .inputField .ice-checkboxbutton button {
+    padding-top: 4px;
+}
+*/
+.searchForm>.inputField .hasdatepicker input {
+	padding: 0px 0px !important;
+}
+
+.searchForm>.inputField .ui-input-label {
+	line-height: 18px !important;
+	text-transform: none;
+	background: white
+}
+
+/*ace:textAreaEntry*/
+.searchForm>.inputField .ui-textareaentry {
+	background: rgb(250, 250, 250);
+}
+
+.searchForm>.inputField textarea {
+	height: 88px !important;
+	border: 1px solid rgb(205, 205, 205) !important;
+	resize: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-indent: 10px;
+}
+
+/* h:selectOneMenu*/
+.searchForm>div.styled {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	/*background: white url(formelements-select.png) no-repeat bottom right;*/
+	border: 1px solid rgb(205, 205, 205) !important;
+	border-radius: 6px;
+	background-color: rgb(250, 250, 250);
+	height: 25px !important;
+	color: rgb(87, 87, 87);
+	padding-top: 2px;
+}
+
+.searchForm>div.styled select {
+	border: 0 !important;
+	-webkit-appearance: none; /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	background-position: 190px 0px;
+	width: 100px;
+	/*Width of select dropdown to give space for arrow image*/
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+	text-overflow: ""; /*Removes default arrow from firefox*/
+	padding: 4px 10px;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.searchFormButton {
+	float: right;
+	margin-right: 28px;
+	margin-top: 31px;
+	margin-bottom: 20px
+}
+
+.inputFieldSelect {
+	background: url(../ep_img/ecp_arrowdown_red.png) no-repeat right #FAFAFA;
+}
+
+.ui-dialog-titlebar-close {
+	background: rgb(250, 250, 250)
+		url(/ecomglobe/javax.faces.resource/images/ui-icons_cc0000_256x240.png.xhtml?ln=ace-hs-theme&v=3_3_0_130416);
+	background-position: -94px -126px;
+}
+
+.login-overlay {
+	background-color: #ce131d !important;
+	background-image: none !important;
+	color: white;
+	text-align: left;
+}
+
+.subMenuTapu {
+	width: 1200px;
+}
+
+#navContainer nav ul ul a {
+	font-size: 11px !important;
+	padding: 0 6px !important;
+}
+
+/* ==========================================================================
+   HTML5  - styles -
+   ========================================================================== */
+html {
+	overflow-y: scroll;
+}
+
+/*** angelegte Referenzen zum Rendern der entsprechenden Medien in der Generierung
+url(../ep_img/ecp_icon_login.png)
+*/
+html, button, input, select, textarea {
+	color: #535353;
+}
+
+html, body, #wrapper {
+	height: 100%
+}
+
+/* avoid broken width when resizing viewport */
+#wrapper, #backgroundSubnav {
+	min-width: 1100px;
+}
+
+body {
+	font: 12px/18px Arial, Helvetica, sans-serif;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+	color: #b3b3b3;
+}
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+/* ========================================================================== */
+
+/* ==========================================================================
+   Layout styles
+   ========================================================================== */
+#mainContainer {
+	min-height: 99.9%;
+	background: #B1B8BD url(../ep_img/ecp_background_main.png) 0 0 repeat;
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-moz-linear-gradient(top, #f3f4f5 0%, #b3b6ba 100%);
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f4f5),
+		color-stop(100%, #b3b6ba));
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-linear-gradient(top, #f3f4f5 0%, #b3b6ba 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-o-linear-gradient(top, #f3f4f5 0%, #b3b6ba 100%); /* Opera 11.10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-ms-linear-gradient(top, #f3f4f5 0%, #b3b6ba 100%); /* IE10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		linear-gradient(to bottom, #f3f4f5 0%, #b3b6ba 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f4f5',
+		endColorstr='#b3b6ba', GradientType=0);
+}
+
+/* +++ HEADER +++ */
+#headerContainer {
+	background: #ce131d;
+	color: #FFF;
+}
+
+#headerContainer a {
+	color: #FFF;
+}
+
+#headerContainer header {
+	width: 1021px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#logoContainer {
+	float: left;
+	width: 220px;
+	height: 55px;
+	margin-top: 20px;
+}
+
+#search form {
+	float: right;
+	width: 190px;
+	margin-top: 0px;
+}
+
+#search form input {
+	width: 143px;
+	height: 25px;
+	padding-right: 35px;
+	font-style: italic;
+	background: #fff url(../ep_img/ecp_icon_search.png) right no-repeat;
+}
+
+#login {
+	float: right;
+	/* margin-top: 15px;
+	margin-left: 500px; rausgenommen wegen verschobener Startseite*/
+	width: 180px;
+	text-align: right;
+}
+/* +++ HEADER +++ */
+
+/* +++ NAVIGATION +++ */
+nav {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+nav li {
+	display: block;
+	float: left;
+}
+
+nav a {
+	text-decoration: none;
+	display: inline-block;
+	zoom: 1;
+	*display: inline; /* IE7 Hack */
+	margin: 0;
+}
+
+#navContainer {
+	height: 40px;
+	background: #fff;
+	border-bottom: 1px solid #dedede;
+}
+
+#navContainer nav {
+	position: relative;
+	width: 1021px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navContainer nav ul {
+	margin: 0 0 0 -20px; /* Navigation nach links ger ckt -> Screendesign */
+	padding: 0;
+	*zoom: 1; /* IE7 Hack */
+}
+
+#navContainer nav li {
+	
+}
+
+#navContainer nav ul ul {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	margin-top: 1px;
+}
+
+#navContainer nav ul ul a {
+	font-size: 12px;
+}
+
+#navContainer nav a {
+	height: 40px;
+	padding: 0 20px 0 20px;
+	font-size: 14px;
+	line-height: 40px;
+	color: #575757;
+	/*background: #fff url(../ep_img/ecp_pipe_main_nav.png) left no-repeat;*/
+}
+
+#navContainer nav a:hover {
+	background: #d9d9d9;
+	text-decoration: none;
+}
+
+#navContainer nav a.active {
+	background: #a7a7a7;
+	color: #fff;
+}
+
+#backgroundSubnav {
+	position: absolute;
+	left: 0;
+	top: 141px;
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	z-index: 0;
+}
+
+#metanavigation {
+	margin: 17px 0 0 275px;
+}
+
+#metanavigation li {
+	margin-right: 30px;
+}
+
+#language {
+	font-size: 10px;
+	margin-right: 27px;
+}
+
+#language li {
+	margin-right: 3px;
+}
+
+#breadcrumb {
+	margin-top: 20px;
+	*zoom: 1; /* IE7 Hack */
+}
+
+#breadcrumb a {
+	text-decoration: underline;
+	color: #535353;
+}
+
+#breadcrumb a:hover {
+	text-decoration: none;
+}
+/* +++ NAVIGATION +++ */
+
+/* +++ CONTENT +++ */
+#contentWrapper {
+	padding-bottom: 75px;
+}
+
+#footerPadding {
+	padding-bottom: 291px;
+}
+
+#content {
+	width: 1030px;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+}
+
+#content .box {
+	float: left;
+	width: 134px;
+	height: 580px;
+	padding: 25px 15px 30px 15px;
+	border: 1px solid #e0e1e2;
+	background: #fff;
+	margin: 0 0 20px 5px;
+}
+
+#content .box:first-child {
+	margin-left: 0px;
+}
+
+#content .box h1 {
+	height: 40px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+#content .box p {
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+#content .box h1 a {
+	display: block;
+	height: 40px;
+	color: #535353;
+	padding-left: 45px;
+	text-decoration: none;
+}
+
+#content .box h1 a:hover {
+	color: #ce131d;
+	text-decoration: none;
+}
+
+#content .box h1 a.tarifs {
+	background: url(../ep_img/ecp_icon_home_tarifs.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.tarifs:hover {
+	background: url(../ep_img/ecp_icon_home_tarifs_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.schedules {
+	background: url(../ep_img/ecp_icon_home_schedules.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.schedules:hover {
+	background: url(../ep_img/ecp_icon_home_schedules_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.booking {
+	background: url(../ep_img/ecp_icon_home_booking.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.booking:hover {
+	background: url(../ep_img/ecp_icon_home_booking_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.shipping {
+	background: url(../ep_img/ecp_icon_home_shipping.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.shipping:hover {
+	background: url(../ep_img/ecp_icon_home_shipping_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.printout {
+	background: url(../ep_img/ecp_icon_home_printout.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.printout:hover {
+	background: url(../ep_img/ecp_icon_home_printout_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.vgm {
+	background: url(../ep_img/ecp_icon_home_vgm.png) left center no-repeat;
+}
+
+#content .box h1 a.vgm:hover {
+	background: url(../ep_img/ecp_icon_home_vgm_hover.png) left center
+		no-repeat;
+}
+
+#content .box h1 a.track {
+	background: url(../ep_img/ecp_icon_home_track.png) left center no-repeat;
+}
+
+#content .box h1 a.track:hover {
+	background: url(../ep_img/ecp_icon_home_track_hover.png) left center
+		no-repeat;
+}
+
+#content .box a {
+	color: #ce131d;
+}
+
+#content .box ul {
+	margin: 0;
+	padding-left: 11px;
+	list-style-type: none;
+	font-size: 13px;
+	line-height: 16px;
+	color: #ce131d;
+}
+
+#content .box li {
+	margin-bottom: 4px;
+}
+
+#content .box li:before {
+	content: "\BB\00a0";
+	margin-left: -11px;
+}
+
+#content .box input, #content .box textarea {
+	width: 112px;
+}
+
+#content .box textarea {
+	height: 104px;
+	font-size: 11px;
+	line-height: 18px;
+	resize: none;
+}
+
+.contentTabs, .contentTable, .content, .contentTableWider {
+	float: right;
+}
+
+.contentTable {
+	width: 720px;
+}
+
+.contentTableWider {
+	width: 750px;
+}
+
+.contentTableWider .buttonLink {
+	margin: 0 10px 30px 0;
+}
+
+.content {
+	width: 720px;
+	display: block;
+	padding: 20px 20px 20px 20px;
+	background: #fff;
+	border: 1px solid #d0d0d0;
+}
+
+.contentWide {
+	width: 1021px;
+}
+
+.fullsize {
+	width: 921px;
+	display: block;
+	padding: 30px 50px;
+	background: #fff;
+	border: 1px solid #d0d0d0;
+	margin-top: 20px;
+}
+
+aside {
+	float: left;
+	width: 198px;
+	background: #fff;
+	border: 1px solid #dedfe0;
+	padding: 20px;
+}
+/* +++ CONTENT +++ */
+
+/* +++ FOOTER +++ */
+#footerHomeContainer {
+	height: 291px;
+	margin: -291px 0 0 0;
+}
+
+#footerHome {
+	height: 215px;
+	background: #eceded url(../ep_img/ecp_background_main.png) 0 0 repeat;
+	/* Old browsers */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-moz-linear-gradient(top, #eceded 0%, #e7e8e9 100%); /* FF3.6+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-gradient(linear, left top, left bottom, color-stop(0%, #eceded),
+		color-stop(100%, #e7e8e9)); /* Chrome,Safari4+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-linear-gradient(top, #eceded 0%, #e7e8e9 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-o-linear-gradient(top, #eceded 0%, #e7e8e9 100%); /* Opera 11.10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-ms-linear-gradient(top, #eceded 0%, #e7e8e9 100%); /* IE10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		linear-gradient(to bottom, #eceded 0%, #e7e8e9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eceded',
+		endColorstr='#e7e8e9', GradientType=0); /* IE6-9 */
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(194, 194, 194, 1);
+	box-shadow: 0px 0px 1px 1px rgba(194, 194, 194, 1);
+	border-top: 1px solid #FFF;
+	margin-bottom: 75px;
+}
+
+#footerHome #footerHomeWrapper {
+	width: 1021px;
+	height: 260px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	text-align: left;
+}
+
+#footerHome div h2 {
+	margin: 0;
+	font-size: 20px;
+	color: #ce131d;
+	font-weight: normal;
+}
+
+#footerHome #footerAbout {
+	float: left;
+	width: 645px;
+	height: 155px;
+	padding: 10px 40px 10px 0;
+	border-right: 1px solid #bababa;
+}
+
+#footerHome #footerLinks {
+	float: right;
+	width: 290px;
+	height: 155px;
+	padding: 5px 0px 10px 40px;
+}
+
+#footerHome #footerLinks h3 {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+}
+
+#footerHome #footerLinks a {
+	color: #ce131d;
+}
+
+#footerHome #footerLinks ul {
+	margin: 0 0 15px 0;
+	padding-left: 11px;
+	list-style-type: none;
+	font-size: 13px;
+	line-height: 16px;
+	color: #ce131d;
+}
+
+#footerHome #footerLinks li {
+	margin-bottom: 4px;
+}
+
+#footerHome #footerLinks li:before {
+	content: "\BB\00a0";
+	margin-left: -11px;
+}
+
+#footer {
+	height: 75px;
+	margin-top: -75px;
+	background: #e7e8e9 url(../ep_img/ecp_background_main.png) 0 0 repeat;
+	/* Old browsers */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-moz-linear-gradient(top, #e7e8e9 0%, #e5e6e7 100%); /* FF3.6+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7e8e9),
+		color-stop(100%, #e5e6e7)); /* Chrome,Safari4+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-webkit-linear-gradient(top, #e7e8e9 0%, #e5e6e7 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-o-linear-gradient(top, #e7e8e9 0%, #e5e6e7 100%); /* Opera 11.10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		-ms-linear-gradient(top, #e7e8e9 0%, #e5e6e7 100%); /* IE10+ */
+	background: url(../ep_img/ecp_background_main.png) 0 0 repeat,
+		linear-gradient(to bottom, #e7e8e9 0%, #e5e6e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8e9',
+		endColorstr='#e5e6e7', GradientType=0); /* IE6-9 */
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(194, 194, 194, 1);
+	box-shadow: 0px 0px 1px 1px rgba(194, 194, 194, 1);
+	border-top: 1px solid #FFF;
+}
+
+#footer div {
+	width: 1021px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: right;
+}
+
+#footer div a {
+	color: #535353
+}
+/* +++ FOOTER +++ */
+/* ========================================================================== */
+
+/* ==========================================================================
+   Text styles
+   ========================================================================== */
+h1 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+p {
+	line-height: 22px;
+}
+
+a {
+	color: #ce131d;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.buttonLink, .buttonLink {
+	display: block;
+	float: left;
+	height: 30px;
+	background-color: #a8a8a8;
+	border: none;
+	line-height: 28px;
+	text-align: left;
+	color: #fff;
+	padding: 0 10px 0 10px;
+	margin: 0 20px 30px 0;
+}
+
+a.buttonLink span {
+	margin-left: 25px;
+	/*font-size: 18px; f?hrte zu zu gro?en Text beim LinerServices-Bakc-Button...wenn andere Styles durch die ?nderung schief aussehen, bitte die fonz-Gr??e in zus?tzlichen Selektor auslagern*/
+}
+
+a.backButton {
+	float: right;
+	margin: 0;
+}
+
+a.buttonLink:hover {
+	background-color: #888888;
+	text-decoration: none;
+}
+
+a.backButton span, a.addButton span {
+	margin: 0 20px 0 0;
+}
+
+a.addButton {
+	background: #ce131d;
+	float: left;
+	margin: 0;
+}
+
+a.addButton:hover {
+	background: #900;
+}
+
+a.printButton {
+	display: block;
+	float: right;
+	padding: 5px 0 0px 25px;
+	background: url(../ep_img/ecp_icon_print.png) no-repeat left center;
+	margin: 0 0 0 20px;
+	color: #CE131D; /* added color, otherwise overwritten by ace theme */
+}
+
+a.subscribeButton {
+	display: block;
+	float: right;
+	padding: 5px 0 0px 25px;
+	background: url(../ep_img/ecp_icon_subscribe.png) no-repeat left center;
+	margin: 0 0 0 20px;
+}
+
+hr {
+	display: block;
+	clear: both;
+	border: 0px;
+	color: #c2c2c2;
+	background: #c2c2c2;
+	height: 1px;
+	margin: 20px 0 20px 0;
+	*margin: 13px 0 13px 0; /* IE7 Hack */
+}
+/* ========================================================================== */
+
+/* ==========================================================================
+   Table styles 
+   ========================================================================== */
+table.ep_table {
+	width: 100%;
+	margin-bottom: 10px;
+	line-height: 16px;
+}
+
+.ep_table thead {
+	font-size: 14px;
+}
+
+.ep_table thead th {
+	text-align: left;
+	font-weight: normal;
+	padding: 8px 16px 8px 16px;
+	border: 1px solid #cdcdcd;
+	background: #FFF;
+}
+
+.ep_table tbody th {
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 8px 16px 8px 16px;
+	border: 1px solid #cdcdcd;
+	background: #FFF;
+}
+
+.ep_table tfoot td {
+	border: none;
+	background: none;
+	margin-bottom: 20px;
+}
+
+.ep_table td {
+	border: 1px solid #cdcdcd;
+	background: #FFF;
+	padding: 16px;
+	vertical-align: top;
+}
+
+.small {
+	font-size: 12px;
+}
+
+.grey {
+	color: #b6b6b6;
+}
+
+.noRightBorder {
+	border-right: 1px solid #fff;
+}
+
+.iconTable {
+	float: right;
+	margin-top: 8px
+}
+
+td:empty {
+	background: none;
+	border: none;
+}
+
+i {
+	color: #b6b6b6;
+}
+
+.contentTable thead th {
+	background: #ce131d;
+	color: #FFF;
+}
+
+.contentTable thead td {
+	background: #ce131d;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.contentTable .tableHidden thead th {
+	background: #fff;
+	color: #535353;
+}
+
+.contentTable .tableHidden thead td {
+	background: #fff;
+	border: 1px solid #cdcdcd;
+}
+
+.contentTable .date {
+	float: left;
+	width: 95px;
+}
+
+.formTable {
+	border: none;
+}
+
+.formTable tr {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.formTable tr:last-child {
+	border-bottom: none;
+}
+
+.formTable td {
+	border: none;
+	padding: 20px 0;
+}
+
+table.cargolist {
+	text-align: left;
+	border: 1px solid #D5D5D5;
+	margin: 1em 0 2em;
+}
+
+table.cargolist th {
+	background: #A8A8A8;
+	color: #fff;
+	font-weight: normal;
+	padding: 20px;
+	border: 1px solid #D5D5D5;
+}
+
+table.cargolist td {
+	background: #FAFAFA;
+	padding: 20px;
+	border: 1px solid #D5D5D5;
+	vertical-align: middle;
+}
+
+table.noBorder td {
+	border: none;
+	padding: 0;
+}
+
+table.smallTable td {
+	padding: 2px 15px 2px 0;
+	border: none;
+}
+
+table.shrinkCells td {
+	padding: 15px 10px 15px 15px;
+	border: none;
+}
+
+table.topalign td {
+	vertical-align: top;
+}
+
+/*  CSS f?r P2P-Result Tabelle - in Use! */
+.tableContent td {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CDCDCD;
+	padding: 16px;
+	vertical-align: top;
+}
+
+.tableContent .hiddenArrow {
+	background: url(../ep_img/ecp_arrow_right.png) no-repeat scroll center
+		center #fff;
+	display: block;
+	height: 49px;
+	width: 32px;
+}
+
+.tableContent .visibleArrow {
+	background: url(../ep_img/ecp_arrow_down.png) no-repeat scroll center
+		center #ce131d;
+	display: block;
+	height: 49px;
+	width: 32px;
+}
+
+.tableContent td:empty {
+	background: none;
+	border: none;
+}
+
+.tableContent tfoot td {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	margin-bottom: 20px;
+}
+
+.tableContent .noRightBorder {
+	border-right: 1px solid #FFFFFF !important;
+}
+
+.vesselDetailsTable {
+	background: none repeat scroll 0 0 #B3D4FC;
+	text-shadow: none;
+	border: 1px solid #D5D5D5;
+	color: #535353;
+	font-weight: normal;
+	line-height: 5px;
+	width: 100%;
+	margin: 10px 0px;
+	font-size: 12px;
+}
+
+.vesselDetailsTable .head {
+	background: none repeat scroll 0 0 #A8A8A8;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+/* ========================================================================== */
+
+/* ==========================================================================
+   Form styles
+   ========================================================================== */
+form {
+	width: 100%;
+}
+
+fieldset {
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+label {
+	display: block;
+	line-height: 30px;
+	width: 228px;
+}
+
+/* ChWe: added css path div.ep_input input for "hsdg:locationSelector" tag */
+input.ep_input, div.ep_input input {
+	background-color: #FAFAFA;
+	color: #868686;
+}
+
+input.ep_input, div.ep_input input, .hasdatepicker input {
+	border: 1px solid #CDCDCD !important;
+	padding: 0 10px !important;
+}
+
+input.ep_input_disabled, .disabled {
+	background-color: #CDCDCD;
+	border: 1px solid #CDCDCD !important;
+}
+
+input.ep_input, div.ep_input input, .hasdatepicker input, input.ep_input_disabled
+	{
+	height: 26px;
+}
+
+textarea {
+	background-color: #fafafa;
+	color: #868686;
+	padding: 8px 10px 8px 10px;
+	margin: 0 0 20px 0;
+	border: 1px solid #cdcdcd;
+}
+
+#remarks {
+	width: 390px;
+	height: 5em;
+	border: 1px solid #cdcdcd;
+	background-color: #fafafa;
+	color: #868686;
+	padding: 0px 10px 0px 10px;
+	margin: 0 0 10px 0;
+	transition: height ease .25s;
+}
+
+.button {
+	height: 29px;
+	width: 134px;
+	background-color: #ce131d;
+	border: none;
+	line-height: 26px;
+	text-align: left;
+	color: #fff;
+	padding: 0 15px 0 15px;
+	margin: 0 0 20px 0;
+}
+
+.button:hover {
+	background-color: #900;
+}
+
+.button span {
+	float: right;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.dk_container {
+	background-color: #fafafa;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.dk_container:focus {
+	outline: 0;
+}
+
+.dk_container a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Opens the dropdown and holds the menu label */
+.dk_toggle {
+	/**
+   * Help: Arrow image not appearing
+   * Try updating this property to your correct dk_arrows.png path
+   */
+	background-image: url(../ep_img/ecp_arrowdown_red.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #cdcdcd;
+	color: #333;
+	padding: 6px 25px 5px 10px;
+	width: 149px;
+}
+
+.wideSelect .dk_toggle {
+	width: 190px;
+}
+
+.widerSelect .dk_toggle {
+	width: 285px;
+}
+
+.smallSelect .dk_toggle {
+	width: 100px;
+}
+
+.leftSelect .dk_toggle {
+	width: 160px;
+}
+
+/* Applied whenever the dropdown is open */
+.dk_open {
+	z-index: 10;
+}
+
+.dk_open .dk_toggle {
+	
+}
+
+/* The outer container of the options */
+.dk_options {
+	
+}
+
+.dk_options a {
+	background-color: #fff;
+	/*border-bottom: 1px solid #999;*/
+	padding: 5px 10px;
+}
+
+.dk_options li:last-child a {
+	border-bottom: none;
+}
+
+.dk_options a:hover, .dk_option_current a {
+	background-color: #eee;
+	/*border-bottom-color: #eee;*/
+	color: #000;
+	text-decoration: none;
+}
+
+/* Inner container for options, this is what makes the scrollbar possible. */
+.dk_options_inner {
+	border: 1px solid #8c8c8e;
+	border-bottom-width: 2px;
+	border-bottom-color: #999;
+	color: #333;
+	max-height: 250px;
+	list-style: none;
+	padding: 0;
+}
+
+/* Set a max-height on the options inner */
+.dk_options_inner, .dk_touch .dk_options {
+	max-height: 250px;
+}
+
+/******  End Theme ******/
+
+/***** Critical to the continued enjoyment of working dropdowns ******/
+.dk_container {
+	display: none;
+	float: left;
+	position: relative;
+}
+
+.dk_container a {
+	outline: 0;
+}
+
+.dk_toggle {
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	position: relative;
+	zoom: 1;
+}
+
+.dk_open {
+	position: relative;
+}
+
+.dk_open .dk_options {
+	display: block;
+}
+
+.dk_open .dk_label {
+	color: inherit;
+}
+
+.dk_options {
+	display: none;
+	margin-top: -1px;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top: 22px !important;
+}
+
+.dk_options a, .dk_options a:link, .dk_options a:visited {
+	display: block;
+}
+
+.dk_options_inner {
+	overflow: auto;
+	position: relative;
+}
+
+.dk_touch .dk_options {
+	overflow: hidden;
+}
+
+.dk_touch .dk_options_inner {
+	max-height: none;
+	overflow: visible;
+}
+
+.dk_fouc select {
+	/*  position: relative;
+  top: -99999em;
+  visibility: hidden;
+  
+  Auskommentiert von ansp, da die SelectBox f?r die Linerserves ausgeblendet wurde; wenn dies woanders zu Problemen f?hrt, bitte bei mir melden */
+	
+}
+
+/***** End Critical to the continued enjoyment of working dropdowns ******/
+.formselect.weight .dk_toggle {
+	width: 40px;
+}
+
+.formselect.weight {
+	width: 40px;
+	float: left;
+	margin-left: 5px;
+}
+
+.formselect.temp .dk_toggle {
+	width: 20px;
+}
+
+.formselect.temp {
+	width: 30px;
+	float: left;
+	margin-left: 5px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	background: url(../ep_img/ecp_radiobtn.png) 0% 3px no-repeat;
+	padding: 5px 40px 5px 20px;
+	display: inline;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	vertical-align: middle;
+}
+
+input[type="radio"]:checked+label {
+	background: url(../ep_img/ecp_radiobtn.png) 0% -17px no-repeat;
+	padding: 5px 40px 5px 20px;
+	display: inline;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	vertical-align: middle;
+}
+
+.formradio {
+	display: inline;
+	height: 1em;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+}
+
+fieldset {
+	
+}
+
+.padunit {
+	padding: 5px 10px;
+}
+
+#ui-datepicker-div {
+	background: #fff;
+	border: 1px solid #d0d0d0;
+	width: 183px;
+	display: none;
+}
+
+#ui-datepicker-div .ui-datepicker-title {
+	text-align: center;
+	padding: 5px 0;
+	font-weight: bold;
+	color: black;
+}
+
+#ui-datepicker-div .ui-datepicker-prev {
+	float: left;
+	padding: 5px;
+}
+
+#ui-datepicker-div .ui-datepicker-next {
+	float: right;
+	padding: 5px;
+}
+
+#ui-datepicker-div table.ui-datepicker-calendar {
+	margin: 0;
+}
+
+#ui-datepicker-div table.ui-datepicker-calendar thead {
+	font-size: 12px;
+}
+
+#ui-datepicker-div table.ui-datepicker-calendar thead th {
+	padding: 2px;
+	border: none;
+	text-align: center;
+}
+
+#ui-datepicker-div table.ui-datepicker-calendar td {
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+
+.tnt_datepicker_container {
+	width: 360px;
+	float: left;
+}
+
+.tnt_inputDatePicker, .p2p_inputDatePicker {
+	width: 300px !important;
+}
+
+.inputDatePicker {
+	width: 175px;
+	background: url(../ep_img/ecp_calendar.png) no-repeat 95% 50% #fafafa;
+	cursor: pointer;
+}
+
+.calenderpopup input[type="text"].ui-inputfield {
+	background: url(../ep_img/ecp_calendar.png) no-repeat 95% 50% #fafafa;
+	cursor: pointer;
+}
+
+#date {
+	background: url(../ep_img/ecp_calendar.png) no-repeat 95% 50% #fafafa;
+	cursor: pointer;
+}
+
+ul.listSelect {
+	width: 450px;
+	padding: 0;
+	border: 1px solid #CDCDCD;
+	height: 467px;
+}
+
+ul.listSelect li {
+	list-style: none;
+}
+
+ul.listSelect li a, ul.listSelect li a:link {
+	text-decoration: none;
+	color: #535353;
+	display: block;
+	padding: 10px 15px;
+	border-top: 1px solid #CDCDCD;
+	border-bottom: 1px solid #CDCDCD;
+	margin: -1px 0 0;
+	font-size: 14px;
+}
+
+ul.listSelect li a:hover {
+	background: #eee;
+}
+
+ul.listSelect li a:active, ul.listSelect li a.active {
+	background: #C81220;
+	color: #fff;
+}
+
+select.details {
+	margin: 1em;
+	width: 400px;
+	height: 469px;
+}
+
+select.details:focus {
+	outline: 0;
+}
+
+#steps {
+	width: 100%;
+	margin: 50px 0 0 0;
+}
+
+#steps ul {
+	list-style: none;
+	padding: 0;
+}
+
+#steps ul li {
+	display: inline-block;
+	width: 196px;
+	border-bottom: 5px solid #A8A8A8;
+	padding: 0 0 5px;
+	margin: 0 8px 0 0;
+	font-size: 14px;
+	color: #A8A8A8;
+	cursor: pointer;
+}
+
+#steps ul li.current-step {
+	border-bottom: 5px solid #C81220;
+	color: #C81220;
+	cursor: auto;
+}
+
+.newShippingInstruction-buttons {
+	float: right;
+	margin: 0;
+}
+
+a.button-back, a.button-next {
+	display: inline-block;
+	height: 30px;
+	width: 107px;
+	background-color: #a8a8a8;
+	border: none;
+	line-height: 28px;
+	text-align: left;
+	color: #fff;
+	padding: 0 10px 0 10px;
+}
+
+a.button-back:hover {
+	background-color: #888888;
+	text-decoration: none;
+}
+
+a.button-next {
+	background: #ce131d;
+	margin: 0 0 0 10px;
+}
+
+a.button-next:hover {
+	background-color: #900;
+	text-decoration: none;
+}
+
+a.button-back span {
+	margin: 0 0px 0 65px;
+}
+
+a.button-next span {
+	margin: 0 0 0 45px;
+}
+
+.error {
+	border: 2px solid #fe0000;
+	color: #FE0000;
+}
+
+.pager a {
+	color: #535353;
+	text-decoration: underline;
+	margin-left: 4px;
+}
+
+.pager .ui-icon {
+	margin-left: 4px;
+}
+
+.pager a:hover {
+	text-decoration: none;
+}
+
+.pager span.active {
+	color: #ce131e;
+	margin-left: 4px;
+}
+/* ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.hazard {
+	color: #ce131d;
+}
+
+.hazard a:link {
+	text-decoration: underline;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+/* ========================================================================== */
+
+/* ++++++++++ JQUERY WIDGETS ++++++++++ */
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+	clear: both;
+}
+
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ui-tabs {
+	position: relative;
+	/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 0;
+	border-bottom: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: 10px 20px 10px 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li a:hover {
+	text-decoration: underline;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 2px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+	.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+}
+
+.ui-tabs .ui-tabs-nav li a,
+	/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+	.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-panel {
+	width: 720px;
+	display: block;
+	padding: 20px 20px 20px 20px;
+	background: #fff;
+	border: 1px solid #d0d0d0;
+}
+
+.contentWide .ui-tabs .ui-tabs-panel {
+	width: 981px !important;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+	font-weight: normal /*{fwDefault}*/;
+	color: #575757 /*{fcDefault}*/;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited
+	{
+	color: #555555 /*{fcDefault}*/;
+	text-decoration: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+	.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+	{
+	font-weight: normal /*{fwDefault}*/;
+	color: #ce131d /*{fcHover}*/;
+}
+
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link,
+	.ui-state-hover a:visited {
+	color: #ce131d /*{fcHover}*/;
+	text-decoration: underline;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+	{
+	border: 1px solid #d0d0d0 /*{borderColorActive}*/;
+	background: #fff /*{bgColorActive}*/;
+	font-weight: normal /*{fwDefault}*/;
+	color: #ce131d /*{fcActive}*/;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited
+	{
+	color: #ce131d /*{fcActive}*/;
+	text-decoration: underline;
+}
+
+/* Accordion
+----------------------------------*/
+#accordion h3 {
+	width: 992px;
+	display: block;
+	padding: 15px;
+	background: #ce131d;
+	color: #fff;
+	border: none !important;
+	margin: 0 0 10px;
+	cursor: pointer;
+}
+
+#accordion h3 span.ui-accordion-header-icon {
+	display: block;
+	width: 32px;
+	height: 28px;
+	color: #fff;
+	float: left;
+	padding: 10px 0;
+	margin: -15px 20px 0 -15px;
+	border-right: 1px solid #cacaca;
+	background: url(../ep_img/ecp_arrowdown_white.png) no-repeat center
+		#C81220;
+}
+
+#accordion .accordioncontent {
+	width: 949px;
+	display: block;
+	padding: 0px 20px;
+	margin: -10px 0 10px 32px;
+	background: #fff;
+	border: 1px solid #cdcdcd;
+}
+
+/* Accordion Booking
+----------------------------------*/
+#accordionbooking h3 {
+	width: 962px;
+	display: block;
+	padding: 15px;
+	background: #ce131d;
+	color: #fff;
+	border: none !important;
+	margin: 0 0 20px;
+	cursor: pointer;
+}
+
+#accordionbooking h3 span.ui-accordion-header-icon {
+	display: block;
+	width: 32px;
+	height: 26px;
+	color: #fff;
+	float: right;
+	padding: 10px 0;
+	margin: -23px 20px 0 -29px;
+	border-right: 1px solid #cacaca;
+	background: url(../ep_img/ecp_arrowdown_white.png) no-repeat left
+		#C81220;
+}
+
+#accordionbooking .accordionbookingcontent {
+	width: 962px;
+	display: block;
+	/*margin: -22px 34px 0 -34px;*/
+	margin: -22px 0 0 0;
+	background: #fff;
+	border: 1px solid #cdcdcd;
+}
+
+/* Lightbox
+----------------------------------*/
+#commodityAssignment {
+	margin-top: -15px;
+	padding: 15px;
+}
+
+.ui-widget-overlay {
+	background: #333 50% 50% repeat-x;
+	opacity: .5;
+	filter: Alpha(Opacity = 50);
+}
+
+.lightBox {
+	background: #fff;
+	padding: 15px;
+}
+
+.ui-dialog-title {
+	font-size: 14px;
+	padding-left: 15px;
+}
+
+/* use ace theme
+.ui-dialog-titlebar-close {
+	width: 30px; 
+	height: 30px;
+	margin: 0 5px 0 0;
+	float: right;
+	border: none;
+	background: #fff url(../ep_img/ecp_icon_close.png) no-repeat;
+	color: transparent;
+	text-indent:-9999px;
+}
+*/
+
+/* BEGIN Erg nzungen Hilfsklassen */
+.floatr {
+	float: right;
+}
+
+.floatl {
+	float: left;
+}
+
+/* zweispaltiges Design */
+.two-column-form>div {
+	float: left;
+	width: 48.5%;
+}
+
+.two-column-form>div:first-child {
+	margin-right: 3%;
+}
+
+.two-column-form input[type=password], .two-column-form input[type=text],
+	.two-column-form div.ep_input input[type=text], .two-column-form div.epSelect
+	{
+	margin: 0 0 15px 0;
+}
+
+.two-column-form input[type=password], .two-column-form input[type=text],
+	.two-column-form div.ep_input input[type=text] {
+	width: 97%;
+	padding: 0px 0px 0px 3% !important;
+}
+
+.two-column-form .error {
+	border-width: 1px;
+}
+
+.two-column-form .dk_container {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.two-column-form .widerSelect .dk_toggle {
+	width: 97%;
+	padding: 5px 0px 5px 3%;
+	height: 17px;
+}
+
+.two-column-form .widerSelect .dk_options a {
+	padding: 5px 0px 5px 3%;
+}
+
+/* END Erg nzungen Hilfsklassen */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-7 B/I (Bills of Lading) Ausdruck */
+.blprintout li:before {
+	content: "\BB\00a0";
+}
+
+.blprintout ul {
+	color: #CE131D;
+	font-size: 13px;
+	line-height: 16px;
+	list-style-type: none;
+}
+
+.blprintout ul {
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+/* END Erg nzungen bzgl. HSDGECP-7 B/I (Bills of Lading) Ausdruck */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-8 B/I (Bills of Lading) Antrag */
+.blinquiry table {
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+}
+
+.blinquiry table td {
+	padding: 16px;
+	border: 1px solid #CDCDCD;
+}
+
+.blinquiry table td:first-child {
+	min-width: 5%;
+	white-space: nowrap;
+}
+
+.blinquiry table label {
+	width: auto;
+}
+
+.blinquiry textarea {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.blinquiry .button {
+	width: auto;
+	margin: 0px;
+	float: right;
+}
+
+/* END Erg nzungen bzgl. HSDGECP-8 B/I (Bills of Lading) Antrag */
+
+/* BEGIN Erg nzungen Small Content P2P Suchseite HSDGECP-11*/
+.ecp_small_content {
+	width: 720px;
+	display: block;
+	padding: 20px 20px 20px 20px;
+	background: #fff;
+	border: 1px solid #d0d0d0;
+}
+
+/* END Erg nzungen Small Content P2P Suchseite HSDGECP-11 */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-15 Create New Account */
+.createnewaccount .contentTableWider {
+	background: #FFFFFF;
+	padding: 20px 40px;
+	width: 679px;
+	border: 1px solid #DEDFE0;
+}
+
+.createnewaccount aside {
+	min-height: 198px;
+}
+
+.createnewaccount .center {
+	margin: 56px auto;
+}
+
+.createnewaccount .button {
+	float: right;
+	margin: 5px -2px 0;
+}
+
+/* END Erg nzungen bzgl. HSDGECP-15 Create New Account */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-13 Booking */
+.booking_detail_label {
+	line-height: 16px;
+	width: 180px;
+	word-wrap: normal;
+	font-size: 14px;
+}
+
+.booking_detail_content {
+	margin-top: 0px;
+}
+
+.booking_detail_container {
+	float: left;
+	width: 184px;
+}
+
+.booking_detail_container_remarks {
+	width: 552px;
+}
+
+.booking_details_container_big {
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.horizontal_line {
+	position: relative;
+	top: 20px;
+	margin-bottom: 40px;
+}
+
+/* END Erg nzungen bzgl. HSDGECP-13 Booking */
+
+/* Begin Erg nzungen Buttons (verwendet in Schedules p2p */
+.ecp_button_right_red {
+	float: right;
+	margin-left: 10px;
+}
+
+/* END Erg nzungen Buttons */
+
+/* Begin Erg nzungen THC */
+.ecp_thc_label {
+	float: left;
+	width: 120px;
+}
+/* END Erg nzungen THC */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-11 Point to Point */
+.ecp_button_right_red {
+	float: right;
+	margin-left: 10px;
+}
+/* END Erg nzungen bzgl. HSDGECP-11 Point to Point */
+
+/* BEGIN Erg nzungen bzgl. HSDGECP-12 Track and Trace */
+.contentTableWider .button {
+	float: right;
+}
+
+aside .button {
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+aside textarea {
+	width: 100%;
+	padding: 0;
+}
+
+.contentTableWider .info {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #DEDFE0;
+	padding: 20px 40px;
+	width: 679px;
+}
+
+.info .infocolumn, .info .lastinfocolumn {
+	float: left;
+}
+
+.info .infocolumn {
+	margin-right: 30px;
+}
+
+table.trackandtracelist {
+	border: 1px solid #D5D5D5;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+table.trackandtracelist th {
+	background: none repeat scroll 0 0 #A8A8A8;
+	border: 1px solid #D5D5D5;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding: 20px;
+}
+
+table.trackandtracelist td {
+	background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #D5D5D5;
+	padding: 20px;
+}
+
+.contentTableWider h1 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+/*
+#contentWrapperHome #breadcrumb {
+    margin-top: -30px;
+}
+*/
+.hasDatepicker {
+	background: url(../ep_img/ecp_calendar.png) no-repeat scroll 95% 50%
+		#FAFAFA !important;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.hasdatepicker input {
+	background: url(../ep_img/ecp_calendar.png) no-repeat scroll 95% 50%
+		#FAFAFA !important;
+	cursor: pointer;
+	width: 220px;
+	text-transform: uppercase;
+}
+/* END Erg nzungen bzgl. HSDGECP-12 Track and Trace */
+
+/*************
+message styles
+*************/
+#errorMessage, #successMessage {
+	color: #FFFFFF;
+	margin: 25px 0 15px;
+	padding: 1px 0 1px 15px;
+}
+
+#errorMessage {
+	background: none repeat scroll 0 0 #FE0000;
+}
+
+#successMessage {
+	background: none repeat scroll 0 0 #009600;
+}
+
+#errorMessage a {
+	color: FFFFFF;
+}
+
+.contentTableWider #errorMessage, .contentTableWider #successMessage,
+	.fullsize #errorMessage, .fullsize #successMessage {
+	margin: 0px;
+}
+
+/*************
+button and link button styles
+*************/
+.epButton, .epButtonRed {
+	border: medium none;
+	color: #FFFFFF;
+	text-align: left;
+	height: 30px;
+	padding: 0 15px;
+}
+
+input.epButton, input.epButtonRed {
+	min-width: 134px; /* inputs minimum width include padding */
+}
+
+a.epButton, a.epButtonRed {
+	line-height: 30px;
+	min-width: 84px;
+	/* link minimum width excludes padding, so we have to subtract the padding left and right */
+}
+
+a.epButton, input.epButton {
+	background-color: #A8A8A8;
+}
+
+a.epButtonRed, input.epButtonRed {
+	background-color: #CE131D;
+}
+
+.epButton:hover {
+	background-color: #888888;
+}
+
+.epButtonRed:hover {
+	background-color: #990000;
+}
+
+a.epButton:hover, a.epButtonRed:hover {
+	text-decoration: none;
+}
+
+/* additional modifications for input epButton or epButtonRed */
+input.cancel, input.delete, input.back, input.add, a.cancel, a.delete, a.back,
+	a.add {
+	padding: 0 15px 0 35px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+input.cancel, input.delete, a.cancel, a.delete {
+	background-position-x: 8px;
+	background-image: url(../ep_img/ecp_icon_close_gif.gif);
+}
+
+input.back, a.back {
+	background-image: url(../ep_img/ecp_icon_back.gif);
+}
+
+input.add, a.add {
+	background-image: url(../ep_img/ecp_icon_add.gif);
+}
+
+input.forward, a.forward {
+	padding: 0 35px 0 15px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-image: url(../ep_img/ecp_icon_forward.gif);
+}
+
+/**************************
+standard select menu design
+**************************/
+.epSelect {
+	width: 240px;
+	overflow: hidden;
+	background: url(../ep_img/ecp_arrowdown_red.png) no-repeat right #FAFAFA;
+	border: 1px solid #CDCDCD;
+	color: #333333;
+	height: 26px;
+}
+
+.epSelect select {
+	background: transparent;
+	width: 257px;
+	height: 26px;
+	padding-top: 5px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	padding-left: 3%;
+	cursor: pointer;
+}
+
+.epSelect select option {
+	padding-left: 3%;
+	padding-top: 5px;
+	height: 22px;
+}
+
+/*************************************************************
+style for new shipping instruction navigation from step 1 to 5
+*************************************************************/
+.tabNavigationArea {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/**********************************
+helper classes for standard styling
+**********************************/
+.nowrap {
+	white-space: nowrap;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.borderless {
+	border: medium none !important;
+}
+
+.nopadding {
+	padding: 0 !important;
+}
+
+.spaceBetweenEpButtons {
+	margin-left: 20px;
+}
+
+/* for two-column-form design */
+.placeholderLabel {
+	height: 30px;
+}
+
+.placeholderInput {
+	height: 26px;
+	width: 97%;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 15px;
+}
+
+/**********************
+cargo list table layout
+**********************/
+div.epCargolist table th {
+	background: none repeat scroll 0 0 #A8A8A8;
+	border: 1px solid #D5D5D5;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding: 20px;
+	font-size: 14px;
+	text-align: left;
+}
+
+div.epCargolist table td {
+	/*  overwrites the background style for selected table rows
+    background: none repeat scroll 0 0 #FAFAFA; */
+	border: 1px solid #D5D5D5 !important;
+	padding: 20px !important;
+}
+
+/**********************
+cargo list no border table layout
+**********************/
+div.epCargolistNoBorder table th {
+	background: none repeat scroll 0 0 #A8A8A8;
+	border: 0px solid #D5D5D5;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding: 0px;
+	font-size: 14px;
+	text-align: left;
+}
+
+div.epCargolistNoBorder table td {
+	/*  overwrites the background style for selected table rows
+    background: none repeat scroll 0 0 #FAFAFA; */
+	border: 0px solid #D5D5D5 !important;
+	padding: 0px !important;
+}
+
+/******************************
+table styles will overwritten by ace theme, so here we go
+******************************/
+/* color of labels used in tds and itself */
+div.overwriteAceThemeDefaultTableLayout div.epCargolist table td label,
+	div.overwriteAceThemeDefaultTableLayout div.epCargolist tbody.ui-datatable-data>tr>td
+	{
+	color: #535353 !important;
+}
+
+div.overwriteAceThemeDefaultTableLayout div.epCargolist tr.ui-selected>td>span
+	{
+	color: #EEEEEE !important;
+}
+
+/* font weight of th*/
+div.overwriteAceThemeDefaultTableLayout div.epCargolist table th span.ui-header-text
+	{
+	font-weight: normal !important;
+}
+
+/* styling in tds*/
+div.overwriteAceThemeDefaultTableLayout div.epCargolist tbody.ui-datatable-data>tr>td
+	{
+	padding: 20px !important;
+	vertical-align: top !important;
+	text-align: left !important;
+}
+
+div.overwriteAceThemeDefaultTableLayout div.epCargolist .ui-header-column,
+	div.overwriteAceThemeDefaultTableLayout div.epCargolist .ui-footer-column
+	{
+	padding: 0px !important;
+}
+
+/************************************
+styles for ice:panelTabSet navigation
+************************************/
+table.epSiNewTabNavigation td.MidMid a:hover {
+	text-decoration: none;
+}
+
+table.epSiNewTabNavigation table.icePnlTbOn td.MidMid div table, table.epSiNewTabNavigation table.icePnlTbOff td.MidMid div table,
+	table.epSiNewTabNavigation table.icePnlTbOver td.MidMid div table {
+	width: 100%;
+}
+
+table.epSiNewTabNavigation table.icePnlTbOn, table.epSiNewTabNavigation table.icePnlTbOff,
+	table.epSiNewTabNavigation table.icePnlTbOver {
+	width: 194px;
+	margin: 5px;
+}
+
+table.epSiNewTabNavigation table.icePnlTbOff td.MidMid div table td,
+	table.epSiNewTabNavigation table.icePnlTbOn td.MidMid div table td,
+	table.epSiNewTabNavigation table.icePnlTbOver td.MidMid div table td {
+	padding: 5px;
+	border-bottom: 5px solid #A8A8A8;
+	color: #A8A8A8;
+	font-size: 14px;
+}
+
+table.epSiNewTabNavigation table.icePnlTbOn td.MidMid div table td {
+	border-bottom-color: #C81220;
+	color: #C81220;
+}
+
+/* style for hsdg location selector */
+.iceSelInpTxtList {
+	background: none repeat scroll 0 0 #FAFAFA;
+	border: 1px solid #CDCDCD;
+}
+
+.iceSelInpTxtSelRow:hover {
+	cursor: default;
+}
+
+.iceSelInpTxtSelRow {
+	color: #FFFFFF;
+	background-color: #CE131D;
+}
+
+/*******
+IE Fixes
+*******/
+/* for ice:panelTabSet */
+.icePnlTbSet img {
+	display: none;
+}
+
+/* theme style overrites standard style by baf note div*/
+.ui-widget-content div.note {
+	color: #535353;
+}
+
+.ui-widget-content div.note a {
+	color: #CE131D;
+	text-decoration: none;
+}
+
+.ui-widget-content div.note a:hover {
+	text-decoration: underline;
+}
+
+sup {
+	top: -5px !important;
+}
+
+/*
+ FIX for Pagereset. ACE insert 2x <br> between Label and InputField.
+ For non ace inputfield .inputfield>br maches.
+ For ace inputfields .inputField>span>span>br matches 
+*/
+.inputField>br, .inputField>span>span>br, .inputField>.hasdatepicker>br,
+	.inputField>div>div>br {
+	display: block;
+	margin-top: 0px;
+	line-height: 1px;
+	content: " ";
+}
+
+.inputField input.input-field-enabled, .inputField input.input-field-disabled,
+	.inputField .input-field-enabled>input, .inputField .input-field-disabled>input
+	{
+	height: 26px;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0px;
+	margin: 0px;
+	text-indent: 10px;
+	border: 1px solid rgb(205, 205, 205);
+	color: rgb(87, 87, 87);
+}
+
+.inputField input.input-field-enabled, .inputField .input-field-enabled>input
+	{
+	background-color: rgb(250, 250, 250);
+}
+
+.inputField input.input-field-disabled, .inputField .input-field-disabled>input
+	{
+	background-color: rgb(200, 200, 200);
+}
+
+.hsSelect {
+	width: 220px;
+	overflow: hidden;
+	background: url(../ep_img/ecp_arrowdown_red.png) no-repeat right #FAFAFA;
+	border: 1px solid #CDCDCD;
+	color: #333333;
+	height: 27px;
+}
+
+.hsSelect select {
+	background: transparent;
+	width: 239px;
+	height: 27px;
+	padding-top: 0px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.hsSelect select.input-field-disabled {
+	background-color: rgb(200, 200, 200);
+	width: 237px;
+	height: 27px;
+	padding-top: 0px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+/*
+ Styling AutocompletionRows.
+ ColCountryIcon width = 12px.
+ colLabel textAlgin left and 4px space between icon and text   
+*/
+.colFlagIcon {
+	width: 12px;
+}
+
+.colLabel {
+	padding-left: 4px;
+	padding-right: 2px;
+	text-align: left;
+}
+
+.colAnchorIcon {
+	width: 11px;
+}
+
+.anchor {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	line-height: 11px;
+	background-image: url(../ep_img/image~1.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/**
+ * FAMFAMFAM flag icons CSS.
+ *
+ * Examples:
+ * <i class="famfamfam-flag fr"> France</i>
+ * <i class="famfamfam-flag us"> United States</i>
+ */
+.f16famfamfam .flag {
+	display: inline-block;
+	width: 16px;
+	height: 11px;
+	line-height: 11px;
+	/* vertical-align: text-top; */
+	background-image: url(../ep_img/flagssprite/famfamfam-flags.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.f16famfamfam .zw {
+	background-position: 0px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .zm {
+	background-position: -16px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .za {
+	background-position: 0px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .yt {
+	background-position: -16px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ye {
+	background-position: -32px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ws {
+	background-position: -32px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .wf {
+	background-position: 0px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .wales {
+	background-position: -16px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .vu {
+	background-position: -32px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .vn {
+	background-position: 0px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .vi {
+	background-position: -16px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .vg {
+	background-position: -32px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ve {
+	background-position: -48px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .vc {
+	background-position: -48px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .va {
+	background-position: -48px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .uz {
+	background-position: -48px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .uy {
+	background-position: 0px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .us {
+	background-position: -16px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .um {
+	background-position: -16px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ug {
+	background-position: -32px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ua {
+	background-position: -48px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tz {
+	background-position: -64px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tw {
+	background-position: -64px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tv {
+	background-position: -64px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tt {
+	background-position: -64px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tr {
+	background-position: -64px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .to {
+	background-position: 0px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tn {
+	background-position: -16px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tm {
+	background-position: -32px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tl {
+	background-position: -48px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tk {
+	background-position: -64px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tj {
+	background-position: 0px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .th {
+	background-position: -16px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tg {
+	background-position: -32px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tf {
+	background-position: -48px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .td {
+	background-position: -64px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .tc {
+	background-position: -80px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sz {
+	background-position: -80px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sy {
+	background-position: -80px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sx {
+	background-position: -80px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sv {
+	background-position: -80px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .st {
+	background-position: -80px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ss {
+	background-position: -80px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sr {
+	background-position: 0px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .so {
+	background-position: -16px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sn {
+	background-position: -32px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sm {
+	background-position: -48px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sl {
+	background-position: -64px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sk {
+	background-position: -80px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .si {
+	background-position: -96px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sh {
+	background-position: -96px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sg {
+	background-position: -96px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .se {
+	background-position: -96px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sd {
+	background-position: -96px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .scotland {
+	background-position: -96px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sc {
+	background-position: -96px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sb {
+	background-position: -96px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sa {
+	background-position: 0px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .rw {
+	background-position: -16px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ru {
+	background-position: -32px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .rs {
+	background-position: -48px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ro {
+	background-position: -64px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .qa {
+	background-position: -80px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .py {
+	background-position: -96px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pw {
+	background-position: 0px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pt {
+	background-position: -16px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ps {
+	background-position: -32px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pr {
+	background-position: -48px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pn {
+	background-position: -64px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pm {
+	background-position: -80px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pl {
+	background-position: -96px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pk {
+	background-position: -112px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ph {
+	background-position: -112px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pg {
+	background-position: -112px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pf {
+	background-position: -112px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pe {
+	background-position: -112px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .pa {
+	background-position: -112px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .om {
+	background-position: -112px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nz {
+	background-position: -112px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nu {
+	background-position: -112px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nr {
+	background-position: -112px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .no {
+	background-position: 0px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bv {
+	background-position: 0px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .sj {
+	background-position: 0px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nl {
+	background-position: -16px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ni {
+	background-position: -32px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ng {
+	background-position: -48px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nf {
+	background-position: -64px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ne {
+	background-position: -80px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .nc {
+	background-position: -96px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .na {
+	background-position: -112px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mz {
+	background-position: -128px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .my {
+	background-position: -128px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mx {
+	background-position: -128px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mw {
+	background-position: -128px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mv {
+	background-position: -128px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mu {
+	background-position: -128px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mt {
+	background-position: -128px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ms {
+	background-position: -128px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mr {
+	background-position: -128px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mq {
+	background-position: -128px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mp {
+	background-position: -128px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mo {
+	background-position: 0px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mn {
+	background-position: -16px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mm {
+	background-position: -32px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ml {
+	background-position: -48px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mk {
+	background-position: -64px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mh {
+	background-position: -80px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mg {
+	background-position: -96px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .me {
+	background-position: 0px -132px;
+	width: 16px;
+	height: 12px;
+}
+
+.f16famfamfam .md {
+	background-position: -112px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mc {
+	background-position: -128px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ma {
+	background-position: -16px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ly {
+	background-position: -32px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lv {
+	background-position: -48px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lu {
+	background-position: -64px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lt {
+	background-position: -80px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ls {
+	background-position: -96px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lr {
+	background-position: -112px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lk {
+	background-position: -128px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .li {
+	background-position: -144px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lc {
+	background-position: -144px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .lb {
+	background-position: -144px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .la {
+	background-position: -144px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kz {
+	background-position: -144px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ky {
+	background-position: -144px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kw {
+	background-position: -144px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kr {
+	background-position: -144px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kp {
+	background-position: -144px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kn {
+	background-position: -144px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .km {
+	background-position: -144px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ki {
+	background-position: -144px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kh {
+	background-position: -144px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .kg {
+	background-position: 0px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ke {
+	background-position: -16px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .jp {
+	background-position: -32px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .jo {
+	background-position: -48px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .jm {
+	background-position: -64px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .je {
+	background-position: -80px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .it {
+	background-position: -96px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .is {
+	background-position: -112px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ir {
+	background-position: -128px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .iq {
+	background-position: -144px -144px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .io {
+	background-position: -160px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .in {
+	background-position: -160px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .im {
+	background-position: -160px -22px;
+	width: 16px;
+	height: 9px;
+}
+
+.f16famfamfam .il {
+	background-position: -160px -31px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ie {
+	background-position: -160px -42px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .id {
+	background-position: -160px -53px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .hu {
+	background-position: -160px -64px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ht {
+	background-position: -160px -75px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .hr {
+	background-position: -160px -86px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .hn {
+	background-position: -160px -97px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .hk {
+	background-position: -160px -108px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gy {
+	background-position: -160px -119px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gw {
+	background-position: -160px -130px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gu {
+	background-position: -160px -141px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gt {
+	background-position: 0px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gs {
+	background-position: -16px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gr {
+	background-position: -32px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gq {
+	background-position: -48px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gp {
+	background-position: -64px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gn {
+	background-position: -80px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gm {
+	background-position: -96px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gl {
+	background-position: -112px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gi {
+	background-position: -128px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gh {
+	background-position: -144px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gg {
+	background-position: -160px -155px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ge {
+	background-position: -176px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gd {
+	background-position: -176px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gb {
+	background-position: -176px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ga {
+	background-position: -176px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fr {
+	background-position: -176px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .gf {
+	background-position: -176px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .re {
+	background-position: -176px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .mf {
+	background-position: -176px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bl {
+	background-position: -176px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fo {
+	background-position: -176px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fm {
+	background-position: -176px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fk {
+	background-position: -176px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fj {
+	background-position: -176px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fi {
+	background-position: -176px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .fam {
+	background-position: -176px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .eu {
+	background-position: -176px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .et {
+	background-position: -176px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .es {
+	background-position: -176px -143px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .er {
+	background-position: -176px -154px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .england {
+	background-position: 0px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .eh {
+	background-position: -16px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .eg {
+	background-position: -32px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ee {
+	background-position: -48px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ec {
+	background-position: -64px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .dz {
+	background-position: -80px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .do {
+	background-position: -96px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .dm {
+	background-position: -112px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .dk {
+	background-position: -128px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .dj {
+	background-position: -144px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .de {
+	background-position: -160px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cz {
+	background-position: -176px -166px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cy {
+	background-position: 0px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cx {
+	background-position: -16px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cw {
+	background-position: -32px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cv {
+	background-position: -48px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cu {
+	background-position: -64px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cs {
+	background-position: -80px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cr {
+	background-position: -96px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .co {
+	background-position: -112px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cn {
+	background-position: -128px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cm {
+	background-position: -144px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cl {
+	background-position: -160px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ck {
+	background-position: -176px -177px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ci {
+	background-position: -192px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cg {
+	background-position: -192px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cf {
+	background-position: -192px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cd {
+	background-position: -192px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .cc {
+	background-position: -192px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .catalonia {
+	background-position: -192px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ca {
+	background-position: -192px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bz {
+	background-position: -192px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .by {
+	background-position: -192px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bw {
+	background-position: -192px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bt {
+	background-position: -192px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bs {
+	background-position: -192px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .br {
+	background-position: -192px -132px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bq {
+	background-position: -192px -143px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bo {
+	background-position: -192px -154px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bn {
+	background-position: -192px -165px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bm {
+	background-position: -192px -176px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bj {
+	background-position: 0px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bi {
+	background-position: -16px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bh {
+	background-position: -32px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bg {
+	background-position: -48px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bf {
+	background-position: -64px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .be {
+	background-position: -80px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bd {
+	background-position: -96px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .bb {
+	background-position: -112px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ba {
+	background-position: -128px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .az {
+	background-position: -144px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ax {
+	background-position: -160px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .aw {
+	background-position: -176px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .au {
+	background-position: -192px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .hm {
+	background-position: -192px -188px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .at {
+	background-position: -208px 0px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .as {
+	background-position: -208px -11px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ar {
+	background-position: -208px -22px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ao {
+	background-position: -208px -33px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .an {
+	background-position: -208px -44px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .am {
+	background-position: -208px -55px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .al {
+	background-position: -208px -66px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ai {
+	background-position: -208px -77px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ag {
+	background-position: -208px -88px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .af {
+	background-position: -208px -99px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ae {
+	background-position: -208px -110px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .ad {
+	background-position: -208px -121px;
+	width: 16px;
+	height: 11px;
+}
+
+.f16famfamfam .np {
+	background-position: -208px -132px;
+	width: 9px;
+	height: 11px;
+}
+
+.f16famfamfam .ch {
+	background-position: -208px -143px;
+	width: 11px;
+	height: 11px;
+}
+
+/* roll over Buttons in Favorite Fields */
+.colorFlip {
+	filter: grayscale(1); /* Firefox 3.5+ */
+	filter: gray; /* IE5+ */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies  Chrome Canary */
+	opacity: 0.2;
+}
+
+/*  roll over Buttons in Favorite Fields */
+.colorFlip:hover {
+	filter: none;
+	-webkit-filter: grayscale(0); /* Webkit Nightlies  Chrome Canary */
+}
+
+.epAlignLeftTable tbody.ui-datatable-data>tr>td {
+	padding: 20px !important;
+	vertical-align: top !important;
+	text-align: left !important;
+}
+
+.ui-widget-header {
+	color: black;
+}
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield
+	{
+	box-shadow: none;
+}
+
+.vgm-tabset-header .ui-tabs-nav div em {
+	width: 70px;
+	padding: 0.5em 2.5em;
+	background: url(../ep_img/ecp_container_16.png) no-repeat scroll 5% 29%;
+}
+
+.tnt-reporting-copy {
+	padding: 20%;
+	display: block;
+	background: url(../ep_img/ecp_icon_copy.png) no-repeat;
+}
+
+.tnt-reporting-schedule {
+	padding: 20%;
+	display: block;
+	background: url(../ep_img/ecp_icon_scheduler.png) no-repeat;
+}
+
+.tnt-reporting-schedule-disable {
+	padding: 20%;
+	display: block;
+	background: url(../ep_img/ecp_scheduler_disabled.png) no-repeat;
+}
+
+.tnt-reporting-delete {
+	padding: 20%;
+	display: block;
+	background: url(../ep_img/ecp_icon_delete.png) no-repeat;
+}
+
+.tnt-reporting-edit {
+	padding: 20%;
+	display: block;
+	background: url(../ep_img/ecp_icon_edit.png) no-repeat;
+}
+
+.tnt-reporting-minus {
+	background: url(../ep_img/minus.png) no-repeat;
+}
+
+.tnt-reporting-plus {
+	background: url(../ep_img/plus.png) no-repeat;
+}
+
+.tnt-ui-header .ui-widget-header {
+	text-shadow: none;
+	alignment-adjust: middle;
+	background: #CE131D !important;
+}
+
+.tntdatepicker input {
+	background: url(../ep_img/ecp_calendar.png) no-repeat scroll 95% 50%;
+	cursor: pointer;
+	width: 120px;
+	text-transform: uppercase;
+}
